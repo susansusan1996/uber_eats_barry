@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+  <title>餐廳想接 Uber Eats？我幫你 3 天上線！｜餐廳外送合作顧問 Barry Liao</title>
+
+  <!-- SEO -->
+  <meta name="description" content="免費協助餐廳申請成為 Uber Eats 合作商家，由 Barry Liao 提供 1 對 1 指導，最快 3 天上線外送平台；免押金、不綁約。立即填表洽詢，馬上新增營業額。" />
+  <meta name="keywords" content="Uber Eats 餐廳申請, 加入 Uber Eats, 外送平台加盟, 餐廳上架外送, Uber Eats 協助申請, 餐廳外送顧問" />
+  <meta name="robots" content="all" />
+  <meta name="copyright" content="餐廳想接 Uber Eats？我幫你 3 天上線！｜餐廳外送合作顧問 Barry Liao" />
+
+  <!-- 分享預覽 -->
+  <meta property="og:title" content="餐廳想接 Uber Eats？我幫你 3 天上線！｜Barry Liao" />
+  <meta property="og:description" content="免費協助餐廳申請成為 Uber Eats 合作商家，由 Barry 1 對 1 指導，最快 3 天上線；免押金、不綁約，馬上新增營業額。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://joinfooddelivery.tw/" />
+  <meta property="og:image" content="https://joinfooddelivery.tw/img/og-preview.jpg" />
+  <meta property="og:site_name" content="Barry Liao｜餐廳外送合作顧問" />
+
+  <link rel="icon" href="img/favicon.ico" />
+
+  <!-- 版型樣式 -->
+  <style>
+    :root{
+      --green:#06C167; --ink:#111; --muted:#6b7280; --light:#f8fafc; --border:#e5e7eb; --shadow:0 8px 30px rgba(2,6,23,.06);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC",Segoe UI,Roboto,Helvetica,Arial,"PingFang TC","Heiti TC","Microsoft JhengHei",sans-serif;color:var(--ink);background:#fff}
+    img{max-width:100%;display:block}
+    a{color:#0f766e;text-decoration:none}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+    /* Header 黑底（右上角按鈕白底黑字） */
+    header.site-header{position:sticky;top:0;background:#000;border-bottom:1px solid #000;z-index:50}
+    header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:800}
+    .logo img{height:28px}
+    header.site-header a, .logo span{color:#fff}
+    nav a{margin-left:18px;font-size:14px}
+    .btn-header{background:#fff !important;color:#000 !important;border-radius:12px;padding:8px 12px !important;border:0}
+
+    /* Hero */
+    .hero{position:relative;color:#fff}
+    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg, rgba(6,193,103,.92), rgba(5,148,79,.88)), url('img/hero-desktop.jpg') center/cover no-repeat;}
+    .hero .container{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:center;min-height:62vh;padding:56px 20px}
+    .hero h1{font-size:36px;line-height:1.25;margin:0 0 10px}
+    /* Hero 兩行標題尺寸 */
+    .h1-xl{display:block;font-size:44px;line-height:1.15;font-weight:900;letter-spacing:.2px}
+    .h1-md{display:block;font-size:28px;line-height:1.25;font-weight:800;opacity:.98}
+    
+    /* 手機尺寸調整 */
+    @media (max-width:960px){
+      .h1-xl{font-size:32px}
+      .h1-md{font-size:20px}
+    }
+    .hero .section-sub{color:#f0fdf4;margin:0 0 8px}
+    .hero .bizlines{margin:10px 0 0;padding-left:18px;color:#e6fff1;line-height:1.6}
+    .hero .bizlines li{margin:0 0 4px}
+    .bullet{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+    /* Hero 小框：白底白框（深色文字） */
+    .chip{background:#fff;border:1px solid #fff;color:#064e3b;padding:8px 10px;border-radius:999px;font-size:14px}
+    .cta{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:800;letter-spacing:.2px;border:0}
+    .btn-primary{background:#fff;color:#064e3b}
+    /* Hero 主按鈕：黑底白框白字 */
+    .btn-hero-primary{background:#000;border:1px solid #fff;color:#fff}
+    .btn-outline-dark{background:#fff;border:1px solid #000;color:#000}
+
+
+    .card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+
+    /* 共用：文字置中（主要標/副標），其餘內容採預設左對齊 */
+    section{padding:56px 0}
+    h2.section-title{font-size:28px;margin:0 0 12px;text-align:center}
+    p.section-sub{color:var(--muted);margin:0 0 24px;text-align:center}
+
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+
+    /* Profile 卡片 */
+    .profile{display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:center}
+    .profile img{width:140px;height:140px;border-radius:16px;object-fit:cover;box-shadow:0 10px 30px rgba(2,6,23,.12)}
+    /* About + Why 合併區塊 */
+    .aboutwhy{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:center}
+    .aboutwhy-photo img{width:100%;max-width:420px;aspect-ratio:1/1;object-fit:cover;border-radius:20px;box-shadow:0 12px 36px rgba(2,6,23,.12)}
+    .grid-why2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:8px}
+    .aboutwhy .section-title,.aboutwhy .section-sub{text-align:left}
+
+    @media (max-width:960px){
+      .aboutwhy{grid-template-columns:1fr}
+      .aboutwhy-photo img{max-width:320px;margin:0 auto}
+      .grid-why2{grid-template-columns:1fr}
+    }
+    .benefit{display:flex;gap:12px;align-items:flex-start}
+    .benefit svg{width:28px;height:28px;flex:0 0 28px}
+
+    /* Why join Uber Eats */
+    .benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .benefit-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:22px;display:flex;gap:10px;align-items:flex-start;box-shadow:var(--shadow)}
+    .benefit-icon{width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center}
+    .benefit-title{font-weight:700;color:#111}
+    .benefit-desc{color:#444}
+
+    /* 流程 */
+    .timeline{display:grid;gap:14px}
+    .step{display:flex;gap:12px;align-items:flex-start;border-left:3px solid var(--green);padding:12px 14px;background:#fff;border-radius:12px}
+    .badge{background:var(--green);color:#053321;display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font-weight:800}
+
+    /* 忙碌店家專區：流程對比（原樣保留） */
+    .flow-wrap{display:grid;grid-template-columns:1fr 50px 1fr;gap:22px;align-items:center}
+    .flow-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+    .flow-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+    .flow-badge{display:inline-block;background:#000;color:#fff;border:2px solid #fff;padding:6px 10px;border-radius:999px;font-size:12px}
+    .flow-title{font-weight:800;color:#111}
+    .flow-time{color:#6b7280;font-size:14px}
+    .flow-steps{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+    .flow-step{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;padding:10px;border-radius:12px;background:#f7f7f8}
+    .num{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff}
+    .num--traditional{background:#ef4444}
+    .num--platform{background:#06C167}
+    .flow-hint{margin-top:10px;color:#444;font-size:13px}
+    .flow-arrow{display:flex;align-items:center;justify-content:center;height:100%;font-size:36px;color:#06C167}
+    .approx{display:inline-block;background:#dcfce7;color:#065f46;border:1px solid #bbf7d0;border-radius:999px;padding:2px 8px;font-size:12px;margin-left:8px}
+
+    /* Testimonials */
+    .testimonial{display:flex;gap:16px;align-items:center}
+    .testimonial img{width:72px;height:72px;border-radius:14px;object-fit:cover}
+    .quote{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+
+    details{border:1px solid var(--border);border-radius:12px;padding:14px 16px;background:#fff}
+    summary{font-weight:800;cursor:pointer}
+
+    .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+    form label{display:block;font-size:14px;margin:8px 0 6px}
+    input,textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:12px;font-size:16px}
+    .note{font-size:12px;color:var(--muted)}
+    .qrcode{width:140px;height:140px;border-radius:12px;border:1px solid var(--border)}
+
+    footer{background:#0f172a;color:#cbd5e1}
+    footer .cols{display:grid;grid-template-columns:2fr 1fr;gap:20px}
+    .disclaimer{font-size:12px;color:#94a3b8}
+
+    @media (max-width:960px){
+      .hero .container{grid-template-columns:1fr}
+      .benefit-grid{grid-template-columns:repeat(2,1fr)}
+      .grid-4{grid-template-columns:repeat(2,1fr)}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      .contact{grid-template-columns:1fr}
+      .profile{grid-template-columns:1fr}
+      .flow-wrap{grid-template-columns:1fr;gap:10px}
+      .flow-arrow{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container wrap">
+      <div class="logo">
+        <img src="img/logo.png" alt="Barry Liao" />
+        <span>Barry Liao｜餐廳外送合作顧問</span>
+      </div>
+      <nav>
+        <a href="#join">為何加入</a>
+        <a href="#why">為何找我</a>
+        <a href="#how">流程</a>
+        <a href="#cases">案例</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-primary btn-header">馬上申請</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div>
+<h1>
+  <span class="h1-xl">餐廳想接 <strong>Uber&nbsp;Eats</strong>？</span>
+  <span class="h1-md">我幫你 <strong>3 天上線</strong>，馬上新增營業額</span>
+</h1>
+        <div class="bullet">
+          <span class="chip">免押金</span>
+          <span class="chip">不綁約</span>
+          <span class="chip">1 對 1 指導</span>
+          <span class="chip">全台服務</span>
+          <span class="chip">營運&毛利健檢</span>
+        </div>
+        <ul class="bizlines">
+          <li>以淨利為目標的外送專屬菜單配置</li>
+          <li>提高客單與出餐效率的組合餐設計</li>
+          <li>依尖峰／離峰做項目排序與出餐時間管理</li>
+        </ul>
+        <div class="cta">
+          <a href="#contact" class="btn btn-hero-primary">馬上申請</a>
+          <a href="https://line.me/R/ti/p/@880vooks" target="_blank" rel="noopener" class="btn btn-outline-dark">加 Line 官方（@880vooks）</a>
+        </div>
+      </div>
+
+      <!-- 快速表單 -->
+      <div class="card">
+        <h3 style="margin:0 0 8px">快速諮詢表單</h3>
+        <p class="note" style="margin:0 0 12px">填寫 1 分鐘，24 小時內回覆</p>
+        <form id="quick-form" action="mailto:bliao3@ext.uber.com" method="post" enctype="text/plain">
+          <label>姓名*</label>
+          <input required name="name" placeholder="請輸入您的姓名" />
+          <label>餐廳名稱</label>
+          <input name="restaurant" placeholder="請輸入您的餐廳名稱" />
+          <label>餐廳地址（選填）</label>
+          <input name="address" placeholder="請輸入您的餐廳地址（選填）" />
+          <label>聯絡電話*</label>
+          <input required name="phone" placeholder="09xx-xxx-xxx" />
+          <label>Email*</label>
+          <input required type="email" name="email" placeholder="example@restaurant.com" />
+          <label>LINE / Line@</label>
+          <input name="line" placeholder="您的 LINE 或店家 Line@（選填）" />
+          <div style="margin-top:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+            <button class="btn btn-hero-primary" type="submit">送出申請</button>
+            <span class="note">或直接加 Line@：<a href="https://line.me/R/ti/p/@880vooks" target="_blank" rel="noopener">@880vooks</a></span>
+            <span class="note">加了官方 Line 後，記得傳個訊息或貼圖給我，我才能收到訊息喔！</span>
+            <img class="qrcode" src="https://qr-official.line.me/gs/M_880vooks_GW.png?oat_content=qr" alt="掃描加入 Line@ @880vooks" />
+          </div>
+          <!-- 移除：核取方塊「我想要營運 / 毛利優化諮詢」 -->
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 為什麼要加入 Uber Eats -->
+  <section id="join">
+    <div class="container">
+      <h2 class="section-title">現在加入 Uber Eats 有什麼好處？</h2>
+      <p class="section-sub">在外送平台曝光，增加品牌知名度，跨區觸及潛在客群，提升營業額</p>
+
+      <div class="benefit-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 13h8.5a3.5 3.5 0 0 1 0 7H9a3 3 0 0 1-3-3v-1" stroke="#000" stroke-width="1.8" stroke-linecap="round"/><circle cx="18.5" cy="7.5" r="3.5" stroke="#000" stroke-width="1.8"/></svg>
+          </div>
+          <div>
+            <div class="benefit-title">免費申辦 不需押金</div>
+            <div class="benefit-desc">入門門檻低，輕鬆啟動外送接單。</div>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="#000" stroke-width="1.8"/><path d="M8 3v4M16 3v4M3 10h18" stroke="#000" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="benefit-title">免費使用 上線更無痛</div>
+            <div class="benefit-desc">零門檻體驗，流程更順暢。</div>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 3h9l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" stroke="#000" stroke-width="1.8"/><path d="M9 13h6M9 17h6" stroke="#000" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="benefit-title">終身不綁約 解約無費用</div>
+            <div class="benefit-desc">彈性合作，保留你的選擇權。</div>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="10" height="18" rx="2" stroke="#000" stroke-width="1.8"/><circle cx="18" cy="12" r="4.5" stroke="#000" stroke-width="1.8"/><path d="M18 12V9.8" stroke="#000" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="benefit-title">可隨時調整價格 及接單時間</div>
+            <div class="benefit-desc">彈性排班，符合你門市實況。</div>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="#000" stroke-width="1.8"/><circle cx="12" cy="18" r="1" fill="#000"/></svg>
+          </div>
+          <div>
+            <div class="benefit-title">免費提供 接單平板</div>
+            <div class="benefit-desc">簡單操作，一鍵接單。</div>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-2h6l2 2h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2z" stroke="#000" stroke-width="1.8"/><circle cx="12" cy="14" r="3.5" stroke="#000" stroke-width="1.8"/></svg>
+          </div>
+          <div>
+            <div class="benefit-title">免費拍攝 餐點照片</div>
+            <div class="benefit-desc">美照上架，提升點擊轉換。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 忙碌店家專區：流程對比（保持原樣） -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">人手不足、擔心太忙？外送接單省去應對麻煩</h2>
+      <p class="section-sub">把招呼、等候、結帳的時間省下來，把力氣用在出餐與品質。</p>
+
+      <div class="flow-wrap">
+        <!-- 左：現場客人 -->
+        <div class="flow-card">
+          <div class="flow-head">
+            <div class="flow-title">門市現場接單（高互動、高成本）</div>
+            <span class="flow-badge">傳統流程</span>
+          </div>
+          <ul class="flow-steps">
+            <li class="flow-step"><div class="num num--traditional">1</div><div class="txt">客人進門、打招呼、帶位／排隊</div></li>
+            <li class="flow-step"><div class="num num--traditional">2</div><div class="txt">等客人點餐、回答問題、修改項目</div></li>
+            <li class="flow-step"><div class="num num--traditional">3</div><div class="txt">下單、結帳、找零／電子支付處理</div></li>
+            <li class="flow-step"><div class="num num--traditional">4</div><div class="txt">出餐（打包／裝袋）</div></li>
+            <li class="flow-step"><div class="num num--traditional">5</div><div class="txt">叫號（交餐、再次確認）</div></li>
+            <li class="flow-step"><div class="num num--traditional">6</div><div class="txt">回饋處理（加點、退換、意見）</div></li>
+            <li class="flow-step"><div class="num num--traditional">7</div><div class="txt">清潔整理（桌面、動線維護）</div></li>
+          </ul>
+          <div class="flow-hint">需要更多前場人力與等待時間，尖峰期排隊易流失。</div>
+        </div>
+
+        <!-- 中：箭頭對照 -->
+        <div class="flow-arrow" aria-hidden="true">➜</div>
+
+        <!-- 右：外送平台 -->
+        <div class="flow-card">
+          <div class="flow-head">
+            <div class="flow-title">外送平台接單（低互動、專心出餐）</div>
+            <span class="flow-badge" style="background:var(--green);color:#053321">平台流程</span>
+          </div>
+          <ul class="flow-steps">
+            <li class="flow-step">
+              <div class="num num--platform">1</div>
+              <div class="txt">平板跳單 → 一鍵接單 <span class="approx">≈ 傳統步驟 1–3</span></div>
+            </li>
+            <li class="flow-step"><div class="num num--platform">2</div><div class="txt">按單出餐、系統顯示預計取餐時間</div></li>
+            <li class="flow-step"><div class="num num--platform">3</div><div class="txt">外送員到店取餐 → 完成</div></li>
+          </ul>
+          <div class="flow-hint">省去招呼／等候／結帳；同樣人力即可承接更多訂單。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About + Why（合併區塊） -->
+  <section id="why" style="background:var(--light)">
+    <div class="container">
+      <div class="aboutwhy">
+        <div class="aboutwhy-photo">
+          <img src="img/barry.jpg" alt="Barry Liao 個人形象照" />
+        </div>
+        <div class="aboutwhy-body">
+          <h2 class="section-title" style="text-align:left;margin-top:0">嗨，我是 Barry Liao</h2>
+          <p class="section-sub" style="text-align:left">餐廳外送合作顧問｜專注協助餐廳加入 Uber Eats、啟動外送營運與菜單上線。流程透明、回覆快速、重視細節。</p>
+          <h3 class="section-title" style="text-align:left;margin:8px 0 8px">為什麼找我協助上線？</h3>
+          <p class="section-sub" style="text-align:left;margin-top:0">把流程交給我，你專心料理與營運。簡單、透明、可追蹤。<br/>不太會用 3C 的老闆也沒問題，我保證把你教到會！</p>
+          <div class="grid-why2">
+            <div class="card">
+              <div class="benefit">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 6v6l4 2" stroke="#06C167" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div><h4 style="margin:0 0 6px">1 對 1 協助上線</h4><p class="section-sub" style="margin:0;text-align:left">申請到上線，一路帶路。</p></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="benefit">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M3 11.5c0-4.142 3.358-7.5 7.5-7.5S18 7.358 18 11.5 14.642 19 10.5 19c-1.51 0-2.916-.44-4.1-1.195l-2.4.695.7-2.3A7.45 7.45 0 013 11.5z" stroke="#06C167" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div><h4 style="margin:0 0 6px">毛利率健檢確保多賺錢</h4><p class="section-sub" style="margin:0;text-align:left">售價區間與品項建議。</p></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="benefit">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l9 4v6c0 5-4 9-9 9s-9-4-9-9V6l9-4z" stroke="#06C167" stroke-width="2.2"/></svg>
+                <div><h4 style="margin:0 0 6px">不需營業登記證也可申辦</h4><p class="section-sub" style="margin:0;text-align:left">依規範評估並指引。</p></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="benefit">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5v14" stroke="#06C167" stroke-width="2.2" stroke-linecap="round"/></svg>
+                <div><h4 style="margin:0 0 6px">站在老闆角度思考利益</h4><p class="section-sub" style="margin:0;text-align:left">以淨利為目標設計。</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 營運與毛利安心（維持原順序：售價區間 → 外送專屬菜單 → 毛利試算） -->
+  <section id="profit" style="background:var(--light)">
+    <div class="container">
+      <h2 class="section-title">營運與毛利安心</h2>
+      <p class="section-sub">每家店成本結構不同，我會先做簡單毛利試算，依平台規範提供建議，讓外送也能維持健康獲利。</p>
+      <div class="grid-3">
+        <div class="card benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4l7 4v8l-7 4-7-4V8l7-4z" stroke="#06C167" stroke-width="2.2"/></svg><div><strong>售價區間建議</strong><br/><span class="section-sub">依平台規範與市場帶路，提供可參考的區間與搭配。</span></div></div>
+        <div class="card benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h12M4 17h8" stroke="#06C167" stroke-width="2.5" stroke-linecap="round"/></svg><div><strong>外送專屬菜單</strong><br/><span class="section-sub">分層品項、組合餐與加價購，提升客單與毛利。</span></div></div>
+        <div class="card benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6v6l4 2" stroke="#06C167" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong>毛利試算</strong><br/><span class="section-sub">用食材/包材/平台費做快速測算，先看得到再決定。</span></div></div>
+      </div>
+      <p class="note" style="margin-top:12px;text-align:center">※ 以上為顧問建議，實際價格由店家自行決定；不對外公開你的資料與策略。</p>
+    </div>
+  </section>
+
+  <!-- 流程 -->
+  <section id="how" style="background:var(--light)">
+    <div class="container">
+      <h2 class="section-title">流程怎麼走（最快 3 天上線）</h2>
+      <div class="timeline" style="max-width:860px;margin:0 auto">
+        <div class="step card"><span class="badge">1</span> 填寫申請表單（1 分鐘）</div>
+        <div class="step card"><span class="badge">2</span> 簽署合作（1 天）</div>
+        <div class="step card"><span class="badge">3</span> 菜單建置與上線準備（1–3 天）</div>
+        <div class="step card"><span class="badge">4</span> 開始接單</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 成功案例（移除三個點點敘述） -->
+  <section id="cases">
+    <div class="container">
+      <h2 class="section-title">成功案例 / 客戶見證</h2>
+      <div class="grid-3">
+        <div class="testimonial">
+          <img src="img/case-1.jpg" alt="案例1" />
+          <div class="quote"><strong>一週 80 筆訂單</strong><br/>上線一週即達 80 筆，午晚高峰穩定。</div>
+        </div>
+        <div class="testimonial">
+          <img src="img/case-2.jpg" alt="案例2" />
+          <div class="quote"><strong>雲端廚房 3 天上線</strong><br/>流程清楚、資料一次到位，快速啟動。</div>
+        </div>
+        <div class="testimonial">
+          <img src="img/case-3.jpg" alt="案例3" />
+          <div class="quote"><strong>老店轉型外送</strong><br/>維持品質、擴大觸及，熟客回流快。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ（桌機 2×2） -->
+  <section id="faq" style="background:var(--light)">
+    <div class="container">
+      <h2 class="section-title">常見問題（FAQ）</h2>
+      <div class="grid-2">
+        <details class="card"><summary>在外送平台上如何維持利潤？</summary><p>我會先與你做簡單毛利試算，依平台規範提供售價區間、外送專屬菜單與餐點組合等建議，協助你達到目標毛利；實際定價由店家決定。</p></details>
+        <details class="card"><summary>抽成多少？</summary><p>依地區與方案不同，將以平台官方規範為準；我會先說明並協助你評估。</p></details>
+        <details class="card"><summary>多久可以開始接單？</summary><p>最短 3 天內可上線。資料齊全、回覆快速就能更快。</p></details>
+        <details class="card"><summary>沒有營業登記證可以申辦嗎？</summary><p>可以，我會依平台規範提供合適的申辦指引。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container contact">
+      <div>
+        <h2 class="section-title">馬上申請</h2>
+        <p class="section-sub">填完就出發；也可直接加 Line 官方：<a href="https://line.me/R/ti/p/@880vooks" target="_blank" rel="noopener">@880vooks</a></p>
+        <form id="contact-form" action="https://docs.google.com/forms/d/e/你的GoogleFormID/formResponse" method="POST">
+          <!-- 建好 Google 表單後，把上面 action 換成你的 formResponse URL，並將以下 name 改為對應的 entry.xxxxx -->
+          <label>姓名*</label>
+          <input required name="entry.name" placeholder="請輸入您的姓名" />
+          <label>餐廳名稱</label>
+          <input name="entry.restaurant" placeholder="請輸入您的餐廳名稱" />
+          <label>餐廳地址</label>
+          <input name="entry.address" placeholder="請輸入您的餐廳地址（選填）" />
+          <label>聯絡電話*</label>
+          <input required name="entry.phone" placeholder="09xx-xxx-xxx" />
+          <label>Email*</label>
+          <input required type="email" name="entry.email" placeholder="example@restaurant.com" />
+          <label>LINE / Line@</label>
+          <input name="entry.line" placeholder="@880vooks 或個人 LINE（選填）" />
+          <div style="margin-top:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+            <button class="btn btn-hero-primary" type="submit">送出申請</button>
+            <span class="note">或寄信到：<a href="mailto:bliao3@ext.uber.com">bliao3@ext.uber.com</a></span>
+            <span class="note">Line@：<a href="https://line.me/R/ti/p/@880vooks" target="_blank" rel="noopener">@880vooks</a></span>
+            <img class="qrcode" src="https://qr-official.line.me/gs/M_880vooks_GW.png?oat_content=qr" alt="掃描加入 Line@ @880vooks" />
+          </div>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3 style="margin:0 0 8px">聯絡資訊</h3>
+        <p style="margin:0 0 8px"><strong>Barry Liao</strong>｜餐廳外送合作顧問</p>
+        <p style="margin:0 0 8px">Line@：<a href="https://line.me/R/ti/p/@880vooks" target="_blank" rel="noopener">@880vooks</a></p>
+        <p style="margin:0 0 8px">Email：<a href="mailto:bliao3@ext.uber.com">bliao3@ext.uber.com</a></p>
+        <p class="note">全台皆可服務，申請、菜單、上線一步到位。所有 1 對 1 諮詢皆保密，不對外公開。如果加我 Line@ 記得傳個訊息或貼圖給我，我才能收到訊息喔！</p>
+        <hr style="border:none;border-top:1px solid var(--border);margin:14px 0" />
+        <p class="disclaimer">※ 免責聲明：本網站為第三方協助服務，<strong>非 Uber Eats 官方網站或官方代表</strong>。所有合作條款以平台官方為準。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container" style="padding:20px 0">
+      <div class="cols">
+        <div>
+          <div style="font-weight:800">Barry Liao｜餐廳外送合作顧問</div>
+          <div class="disclaimer">© <span id="year"></span> Barry Liao. All rights reserved.</div>
+        </div>
+        <div style="text-align:right">
+          <a href="#" class="disclaimer">隱私政策：僅用於聯繫與申請，不會主動提供第三方。</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
