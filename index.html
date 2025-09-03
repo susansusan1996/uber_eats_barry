@@ -114,9 +114,8 @@
         font-size: 14px;
       }
       .btn-header {
-        background: #fff !important;
-        color: #000 !important;
-        border-radius: 12px;
+        background: #000 !important;
+        color: #fff !important;
         padding: 8px 12px !important;
         border: 0;
       }
@@ -592,6 +591,74 @@
           display: none;
         }
       }
+
+      /* --------------------------------------------------------- */
+      /* 基本 header 佈局 */
+      .site-header {
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .site-header .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+
+      .site-header .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .site-header nav {
+        display: flex;
+        gap: 20px;
+      }
+
+      /* .site-header nav a {
+        text-decoration: none;
+        color: #333;
+      } */
+
+      /* 漢堡按鈕（預設隱藏） */
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+      }
+
+      .menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background: #06c167eb;
+        border-radius: 2px;
+        padding: 2px 2px 2px 2px;
+      }
+
+      /* 📱 手機版 */
+      @media (max-width: 768px) {
+        .site-header nav {
+          display: none;
+          flex-direction: column;
+          background: #000;
+          position: absolute;
+          top: 60px;
+          right: 20px;
+          border: 1px solid #ddd;
+          padding: 10px;
+        }
+
+        .site-header nav.active {
+          display: flex;
+        }
+
+        .menu-toggle {
+          display: flex;
+        }
+      }
     </style>
   </head>
 
@@ -607,12 +674,17 @@
           />
           <span>Barry Liao｜餐廳外送合作顧問</span>
         </div>
-        <nav>
-          <a href="#join">為何加入</a>
-          <a href="#why">為何找我</a>
-          <a href="#how">流程</a>
-          <a href="#cases">案例</a>
-          <a href="#faq">FAQ</a>
+        <!-- 漢堡選單按鈕 -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span> <span></span> <span></span>
+        </div>
+        <!-- 導覽列 -->
+        <nav id="menu">
+          <a href="#join" class="btn btn-primary btn-header">為何加入</a>
+          <a href="#why" class="btn btn-primary btn-header">為何找我</a>
+          <a href="#how" class="btn btn-primary btn-header">流程</a>
+          <a href="#cases" class="btn btn-primary btn-header">案例</a>
+          <a href="#faq" class="btn btn-primary btn-header">FAQ</a>
           <a href="#contact" class="btn btn-primary btn-header">馬上申請</a>
         </nav>
       </div>
@@ -1333,13 +1405,18 @@
               >非 Uber Eats 官方網站或官方代表</strong
             >。所有合作條款以平台官方為準。
           </p>
+          <img
+            src="images/business_card.jpg"
+            alt="Barry Liao"
+            style="width: 450px; height: auto"
+          />
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <div class="container" style="padding: 20px 0">
+      <div class="container" style="padding: 20px 20px">
         <div class="cols">
           <div>
             <div style="font-weight: 800">Barry Liao｜餐廳外送合作顧問</div>
@@ -1378,6 +1455,20 @@
       }
       bindForm("quick-form");
       bindForm("contact-form");
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      // 點擊漢堡按鈕 → 開關選單
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
+      // 點擊選單連結 → 自動收合
+      document.querySelectorAll("#menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.remove("active");
+        });
+      });
     </script>
   </body>
 </html>
